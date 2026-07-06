@@ -1,0 +1,9 @@
+du -h -x --max-depth=1
+netstat -ano | grep ":8000" | awk '{print $5}' | xargs -I {} taskkill -F -PID {} 2>/dev/null
+nmon命令
+mvn clean install -DskipTests
+
+mvn clean package
+生成ssh key
+ssh-keygen -t ed25519 -C "happy198308@126.com"
+到~/.ssh下面，复制id_ed25519.pub的内容即可
