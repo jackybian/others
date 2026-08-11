@@ -12,3 +12,8 @@ ssh-keygen -t ed25519 -C "happy198308@126.com"
 
 docker-compose build --no-cache abl-infra-system
 docker-compose up -d abl-gateway
+
+sudo ntpdate ntp.aliyun.com
+
+mvn clean install -pl apm-module-product -amd -DskipTests
+mvn clean package -pl apm-module-product/apm-module-product-biz -am -DskipTests
