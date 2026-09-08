@@ -17,3 +17,5 @@ sudo ntpdate ntp.aliyun.com
 
 mvn clean install -pl apm-module-product -amd -DskipTests
 mvn clean package -pl apm-module-product/apm-module-product-biz -am -DskipTests
+
+SAP当前密码Ost1234567
